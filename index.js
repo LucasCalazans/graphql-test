@@ -5,6 +5,8 @@ const graphqlHTTP = require('express-graphql');
 const { buildSchema } = require('graphql');
 const graphqlSchema = importSchema('./schemas/schema.graphql');
 
+const PORT = process.env.PORT || 4000;
+
 const schema = buildSchema(graphqlSchema);
 
 const root = {
@@ -29,4 +31,4 @@ app.use('/graphql', graphqlHTTP({
     rootValue: root,
     graphiql: true,
 }));
-app.listen(4000, () => console.log('Now browse to localhost:4000/graphql'));
+app.listen(PORT, () => console.log('Now browse to localhost:4000/graphql'));
