@@ -1,0 +1,8 @@
+type Zipcode {
+  zipcode: String
+  street: String
+  complement: String
+  neighborhood: String
+  city: String
+  state: String
+}

@@ -1,0 +1,5 @@
+# import Zipcode from 'zipcode.graphql'
+
+type Query {
+  getAddressByZipcode (code: String!): Zipcode
+}
