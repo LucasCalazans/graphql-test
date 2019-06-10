@@ -1,8 +1,10 @@
 # Installation
 
-$ `yarn install`
+`yarn install`
 
-Open http://localhost:4000
+# Usage
+
+`node index.js`
 
 # Deployed version
 
